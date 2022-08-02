@@ -45,6 +45,7 @@ body {
 
 section {
    padding: 100px 0 70px;
+   width: 100vw;
 }
 
 /*================= BANNER SECTION =================*/
