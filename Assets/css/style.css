@@ -1,0 +1,141 @@
+:root {
+   --bg-color-1: #336;
+   --bg-color-2: #568;
+   --bg-color-3: #eee;
+   --bg-footer: #262626;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+.logo-icon {
+   display: flex;
+   align-items: center;
+   gap: 0.475rem;
+   font-size: 1.5rem;
+}
+
+.bg-gradient {
+   background: linear-gradient(
+      to right,
+      var(--bg-color-1),
+      var(--bg-color-2)
+   ) !important;
+}
+
+.title {
+   margin-bottom: 4rem;
+   font-size: 2.5rem;
+   font-weight: 400;
+}
+
+.title::after {
+   content: '';
+   display: block;
+   background-color: var(--bg-color-1);
+   height: 5px;
+   width: 200px;
+   margin: 0.6rem auto 0;
+}
+
+section {
+   padding: 100px 0 70px;
+}
+
+/*================= BANNER SECTION =================*/
+
+#banner {
+   padding-bottom: 0 !important;
+}
+
+.banner-button {
+   background: var(--bg-color-3);
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   color: var(--bg-color-1);
+   font-weight: 600;
+   text-transform: capitalize;
+   padding: .5rem;
+   border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.banner-button i {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   background-color: var(--bg-color-1);
+   color: #fff;
+   font-size: 1.6rem;
+}
+
+@media (max-width: 767px) {
+   .banner-button {
+      border-radius: 1.5rem;
+   }
+}
+
+/*================= SERVICES SECTION =================*/
+.services-icon {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   height: 60px;
+   width: 60px;
+   margin-bottom: 1rem;
+}
+
+/*================= ABOUT US SECTION =================*/
+#about-us {
+   background-color: var(--bg-color-3);
+}
+
+/*================= TESTIMONIALS SECTION =================*/
+.custom-card {
+   border-left: 5px solid var(--bg-color-1);
+}
+
+.custom-card img {
+   width: 90px;
+   height: 90px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.custom-card p:last-of-type {
+   display: inline-block;
+   vertical-align: middle;
+   margin-left: 10px;
+}
+
+/*================= CONTACTS SECTION =================*/
+#social-media {
+   background: var(--bg-color-3);
+}
+
+.medias-icons a{
+   font-size: 5rem;
+   color: var(--bg-color-1) !important;
+   display: inline-block;
+   margin: 0 2rem;
+   transition: .3s;
+}
+
+.medias-icons a:hover {
+   transform: translateY(5px);
+   color: var(--bg-color-2) !important;
+}
+
+/*================= FOOTER =================*/
+#footer {
+   background: var(--bg-footer);
+}
